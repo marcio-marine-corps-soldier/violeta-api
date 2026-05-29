@@ -1,27 +1,23 @@
 {
-  "name": "violeta-backend-enterprise",
+  "name": "violeta-api",
   "version": "1.0.0",
-  "description": "Backend API Node.js/SQLite com Criptografia de Ponta a Ponta para o Projeto Violeta",
+  "description": "API do Projeto Violeta Enterprise",
   "main": "src/server.js",
   "scripts": {
-    "start": "node src/server.js",
-    "dev": "nodemon src/server.js"
+    "start": "node src/server.js"
   },
   "dependencies": {
+    "express": "^4.18.2",
     "better-sqlite3": "^11.0.0",
     "bcryptjs": "^2.4.3",
+    "jsonwebtoken": "^9.0.2",
     "cors": "^2.8.5",
     "dotenv": "^16.3.1",
-    "express": "^4.18.2",
-    "express-rate-limit": "^7.1.1",
     "google-auth-library": "^9.4.1",
-    "helmet": "^7.1.0",
-    "jsonwebtoken": "^9.0.2"
-  },
-  "devDependencies": {
-    "nodemon": "^3.0.2"
+    "express-rate-limit": "^7.1.4",
+    "helmet": "^7.1.0"
   },
   "engines": {
-    "node": ">=18.0.0"
+    "node": "20.x"
   }
 }
